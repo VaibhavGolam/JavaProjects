@@ -17,10 +17,11 @@ public class Temp extends Application {
 		@Override
 		public void start(Stage stage) throws IOException {
 				FXMLLoader fxmlLoader = new FXMLLoader(Temp.class.getResource("hello-view.fxml"));
-
 				VBox rootNode = fxmlLoader.load();
-				MenuBar menuBar = createMenu();
-				rootNode.getChildren().add(0,menuBar);
+
+//				MenuBar menuBar = createMenu();
+//				rootNode.getChildren().add(0,menuBar);
+
 
 				Scene scene = new Scene(rootNode);
 				stage.setScene(scene);
